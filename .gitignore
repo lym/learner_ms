@@ -1,0 +1,15 @@
+.env
+*.pyc
+*.pyo
+*.db
+*.pot
+*.doctree
+.doctrees
+.DS_Store
+.coverage
+.env_vars
+.idea/
+.venv/
+_build/
+__pycache__/
+assets/
