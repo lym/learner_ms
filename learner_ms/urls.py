@@ -17,7 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
+from academia.urls import router
+
 urlpatterns = [
+    path('', include(router.urls)),
     path("academia/", include("academia.urls")),
     path('admin/', admin.site.urls),
 ]
