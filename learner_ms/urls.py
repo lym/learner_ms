@@ -18,9 +18,14 @@ from django.contrib import admin
 from django.urls import include, path
 
 from academia.urls import router
+from academia.views import AssignedStudentsViewSet
 
 urlpatterns = [
     path('', include(router.urls)),
+    path(
+        'teachers/<int:pk>/students/', AssignedStudentsViewSet.as_view(),
+        name='teachers-students'
+    ),
     path("academia/", include("academia.urls")),
     path('admin/', admin.site.urls),
 ]

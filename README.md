@@ -66,7 +66,15 @@ payload:
 DELETE /teachers/<id>/
 
 ### Assign a student to a teacher
+POST /teachers/<teacher id>/students/
+payload:
+```
+[
+    {"name": "name 1", "surname": "surname 1"},
+    {"name": "name 2", "surname": "surname 2"}
+]
+```
 
 ### List a teacher's students
-
-### Remove/Unassign a student from a teacher
+GET /teachers/<teacher id>/students/
+response: Array of students

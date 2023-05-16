@@ -1,2 +1,3 @@
+from .assigned_students_viewset import AssignedStudentsViewSet
 from .student_viewset import StudentViewSet
 from .teacher_viewset import TeacherViewSet
