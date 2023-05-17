@@ -5,6 +5,14 @@
 * Django REST API
 * MySQL
 
+## Setting up the project
+* Clone this repository
+* `cd` into the project root
+* Install dependencies with `pip-sync`
+* Activate the virtual environment with `source .venv/bin/activate`
+* Start the application with `./manage.py runserver`
+The app should start running via port `8000`
+
 ## REST Endpoints
 Remember to always append a slash
 
@@ -78,3 +86,6 @@ payload:
 ### List a teacher's students
 GET /teachers/<teacher id>/students/
 response: Array of students
+
+## Testing the UI
+The entry point is at _http://127.0.0.1:8000/academia/_

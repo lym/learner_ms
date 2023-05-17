@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+  <p> Welcome {{teacher.name}}, here is student list </p>
+    <ul class="list-group">
+    {% for student in students %}
+      <li class="list-group-item">
+        {{ student.name }}
+        {% include '_student_actions.html' %}
+      </li>
+    {% endfor %}
+    </ul>
+{% endblock %}

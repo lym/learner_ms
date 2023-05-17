@@ -1,0 +1,12 @@
+<ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link" href="{% url 'teacher-show' teacher.id %}">View</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page"
+       href="{% url 'teacher-edit' teacher.id %}">Edit</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Delete</a>
+  </li>
+</ul>
