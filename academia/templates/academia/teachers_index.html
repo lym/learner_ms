@@ -1,0 +1,51 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <!-- <link rel="manifest" href="site.webmanifest"> -->
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="{% static 'academia/normalize.css' %}">
+  <link rel="stylesheet" href="{% static 'academia/main.css' %}">
+  <link rel="stylesheet" href="{% static 'academia/bootstrap.min.css' %}">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+        <span class="fs-4">Learner MS</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="{% url 'students-index' %}" class="nav-link">Students</a></li>
+        <li class="nav-item"><a href="{% url 'teachers-index' %}" class="nav-link active" aria-current="page">Teachers</a></li>
+      </ul>
+    </header>
+  </div>
+
+  <div class="container">
+    <p> The students list will appear here </p>
+  </div>
+
+
+  <script src="{% static 'academia/javascript/modernizr-3.11.2.min.js' %}"></script>
+  <script src="{% static 'academia/javascript/plugins.js' %}"></script>
+  <script src="{% static 'academia/javascript/main.js' %}"></script>
+</body>
+</html>
