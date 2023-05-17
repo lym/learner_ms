@@ -9,12 +9,28 @@
 * Clone this repository
 * `cd` into the project root
 * Install dependencies with `pip-sync`
+* Create a MySQL user with database CREATE rights. Note the username and
+  password
+* Create a MySQL database, for the project, and assign it to the user
+  above
+* Create a file named `.env` at the root of the project and add the
+  following (fill in values where you see `<..>`):
+```
+DATABASE_URL="mysql2://<username>:<password>@localhost/<database name>"
+SECRET_KEY="<a random string of letter, numbers and punctuation>"
+```
 * Activate the virtual environment with `source .venv/bin/activate`
 * Start the application with `./manage.py runserver`
 The app should start running via port `8000`
 
+
 ## REST Endpoints
-Remember to always append a slash
+The following actions are supported via the REST endpoints:
+* Student Creation/Reading/Updating/Deletion
+* Teacher Creation/Reading/Updating/Deletion
+* Assigning students to a teacher
+
+Note: Remember to always append a slash to the URLs
 
 ### Get list of students
 GET /students/
